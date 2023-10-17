@@ -1,0 +1,43 @@
+interface contrast {
+  [key: string]: Promise<any>;
+}
+
+const chinaProvinceGeo: contrast = {
+  河北: import('./hebei.json'),
+  山西: import('./shanxi.json'),
+  黑龙江: import('./heilongjiang.json'),
+  吉林: import('./jilin.json'),
+  辽宁: import('./liaoning.json'),
+  江苏: import('./jiangsu.json'),
+  浙江: import('./zhejiang.json'),
+  安徽: import('./anhui.json'),
+  福建: import('./fujian.json'),
+  江西: import('./jiangxi.json'),
+  山东: import('./shandong.json'),
+  河南: import('./henan.json'),
+  湖北: import('./hubei.json'),
+  湖南: import('./hunan.json'),
+  广东: import('./guangdong.json'),
+  海南: import('./hainan.json'),
+  四川: import('./sichuan.json'),
+  贵州: import('./guizhou.json'),
+  云南: import('./yunnan.json'),
+  陕西: import('./shanxi1.json'),
+  甘肃: import('./gansu.json'),
+  青海: import('./qinghai.json'),
+  台湾: import('./taiwan.json'),
+  北京: import('./beijing.json'),
+  天津: import('./tianjin.json'),
+  上海: import('./shanghai.json'),
+  重庆: import('./chongqing.json'),
+  内蒙古: import('./neimenggu.json'),
+  广西: import('./guangxi.json'),
+  西藏: import('./xizang.json'),
+  宁夏: import('./ningxia.json'),
+  新疆: import('./xinjiang.json'),
+  新疆维吾尔自治区: import('./xinjiang.json'),
+  新疆兵团: import('./xinjiang.json'),
+  香港: import('./xianggang.json'),
+  澳门: import('./aomen.json'),
+};
+export default chinaProvinceGeo;
