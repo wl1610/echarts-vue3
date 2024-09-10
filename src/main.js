@@ -3,6 +3,11 @@ import './assets/main.css'
 import { createApp } from 'vue'
 import router from './router';
 import App from './App.vue';
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+import VueEasyTree from '@wchbrad/vue-easy-tree';
+import { VueVirtualScroller } from 'vue-virtual-scroll-list'
+import VirtualList from "vue-virtual-scroll-list";
 
 import HighchartsVue from 'highcharts-vue';
 import * as echarts from 'echarts';
@@ -28,5 +33,9 @@ echarts.registerMap('china', chinaGeo, {
   //   width:8
   // },
 });
+app.component('virtual-list', VirtualList);
+app.use(ElementPlus);
+// app.use(VueEasyTree);
+
 
 app.mount('#app');

@@ -5,7 +5,7 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      redirect: '/bar'
+      redirect: '/virtualSelect'
     },
     {
       path: '/bar',
@@ -53,6 +53,20 @@ const router = createRouter({
       name: 'map2',
       meta: {
         title: 'map2',
+      },
+    },
+    {
+      path: '/treedemo',
+      component: () => import('@/views/TreeDemo/index.vue'),
+      meta: {
+        title: 'treedemo',
+      },
+    },
+    {
+      path: '/virtualSelect',
+      component: () => import('@/views/VirtualSelect/index.vue'),
+      meta: {
+        title: 'virtualSelect',
       },
     },
   ],
